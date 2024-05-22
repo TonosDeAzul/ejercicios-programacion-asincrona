@@ -1,245 +1,536 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- TAILWIND CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- TAILWIND COLOR CONFIG -->
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            clifford: "#da373d",
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TAILWIND CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- TAILWIND COLOR CONFIG -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
           },
         },
-      },
-    };
-  </script>
-  <!-- DAISY UI CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <title>Document</title>
-</head>
+      };
+    </script>
+    <!-- DAISY UI CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.11.1/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Document</title>
+  </head>
 
-<body>
-  <section class="w-full max-w-screen-2xl m-auto flex items-center flex-col p-5 gap-5">
-    <!-- EJERCICIO #01 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #01</div>
-      <div class="collapse-content">
-        <p>
-          Escriba una función imprimirNumeros(desde, hasta) que genere un
-          número cada segundo, comenzando desde desde y terminando con hasta.
-          <br />
-          Haz dos variantes de la solución describiendo el paso a paso de cada
-          una de ellas: <br />
-          • Usando setInterval. <br />
-          • Usando setTimeout anidado.
-        </p>
-        <a href="HTML/ejercicio01.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+  <body>
+    <section
+      class="w-full max-w-screen-2xl m-auto flex items-center flex-col p-5 gap-5"
+    >
+      <!-- EJERCICIO #01 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #01</div>
+        <div class="collapse-content">
+          <p>
+            Escriba una función imprimirNumeros(desde, hasta) que genere un
+            número cada segundo, comenzando desde desde y terminando con hasta.
+            <br />
+            Haz dos variantes de la solución describiendo el paso a paso de cada
+            una de ellas: <br />
+            • Usando setInterval. <br />
+            • Usando setTimeout anidado.
+          </p>
+          <a
+            href="HTML/ejercicio01.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #02 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #02</div>
-      <div class="collapse-content">
-        <p>
-          2. En el siguiente código hay una llamada programada setTimeout, luego se ejecuta un cálculo
-          pesado que demora más de 100 ms en finalizar. <br>
-          ¿Cuándo se ejecutará la función programada y por qué se ejecutará? <br>
-          a) Después del bucle. <br>
-          b) Antes del bucle. <br>
-          c) Al comienzo del bucle. <br>
-          ¿Qué va a mostrar alert()?
-        </p>
-        <img src="Images/1.png" alt="">
-        <a href="HTML/ejercicio02.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+      <!-- EJERCICIO #02 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #02</div>
+        <div class="collapse-content">
+          <p>
+            2. En el siguiente código hay una llamada programada setTimeout,
+            luego se ejecuta un cálculo pesado que demora más de 100 ms en
+            finalizar. <br />
+            ¿Cuándo se ejecutará la función programada y por qué se ejecutará?
+            <br />
+            a) Después del bucle. <br />
+            b) Antes del bucle. <br />
+            c) Al comienzo del bucle. <br />
+            ¿Qué va a mostrar alert()?
+          </p>
+          <img src="Images/1.png" alt="" />
+          <a
+            href="HTML/ejercicio02.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #03 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #03</div>
-      <div class="collapse-content">
-        <p>
-          Crear una función map que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • obtenga el resultado <br />
-          • lo pushee a un nuevo array <br />
-          • devuelva el array final con el resultado de cada una de las
-          llamadas al callback.
-        </p>
-        <a href="HTML/ejercicio03.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+      <!-- EJERCICIO #03 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #03</div>
+        <div class="collapse-content">
+          <p>
+            Crear una función map que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • obtenga el resultado <br />
+            • lo pushee a un nuevo array <br />
+            • devuelva el array final con el resultado de cada una de las
+            llamadas al callback.
+          </p>
+          <a
+            href="HTML/ejercicio03.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #04 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #04</div>
-      <div class="collapse-content">
-        <p>
-          Crear una función filter que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • sí dicho callback devuelve true, pushea el elemento a un nuevo
-          array <br />
-          • devuelva el array final con los elementos que pasaron el "filtro".
-        </p>
-        <a href="HTML/ejercicio04.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+      <!-- EJERCICIO #04 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #04</div>
+        <div class="collapse-content">
+          <p>
+            Crear una función filter que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • sí dicho callback devuelve true, pushea el elemento a un nuevo
+            array <br />
+            • devuelva el array final con los elementos que pasaron el "filtro".
+          </p>
+          <a
+            href="HTML/ejercicio04.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #05 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #05</div>
-      <div class="collapse-content">
-        <p>
-          5. Crear una función every que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • devuelva true si todas las llamadas al callback devolvieron true
-        </p>
-        <a href="HTML/ejercicio05.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+      <!-- EJERCICIO #05 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #05</div>
+        <div class="collapse-content">
+          <p>
+            5. Crear una función every que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • devuelva true si todas las llamadas al callback devolvieron true
+          </p>
+          <a
+            href="HTML/ejercicio05.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #06 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #06</div>
-      <div class="collapse-content">
-        <p>
-          Crear una función some que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • devuelva true si al menos una de las llamadas al callback devolvió
-          true
-        </p>
-        <a href="HTML/ejercicio06.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+      <!-- EJERCICIO #06 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #06</div>
+        <div class="collapse-content">
+          <p>
+            Crear una función some que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • devuelva true si al menos una de las llamadas al callback devolvió
+            true
+          </p>
+          <a
+            href="HTML/ejercicio06.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #07 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #07</div>
-      <div class="collapse-content">
-        <p>
-          Crear una función find que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • devuelva el elemento pasado como argumento del primer callback que
-          devuelva true <br />
-          • sí ningún callback devuelve true, devuelva undefined
-        </p>
-        <a href="HTML/ejercicio07.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+      <!-- EJERCICIO #07 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #07</div>
+        <div class="collapse-content">
+          <p>
+            Crear una función find que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • devuelva el elemento pasado como argumento del primer callback que
+            devuelva true <br />
+            • sí ningún callback devuelve true, devuelva undefined
+          </p>
+          <a
+            href="HTML/ejercicio07.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #08 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #08</div>
-      <div class="collapse-content">
-        <p>
-          Crear una función findIndex que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • devuelva el índice del elemento pasado como argumento del primer
-          callback que devuelva true <br />
-          • sí ningún callback devuelve true, devuelva undefined
-        </p>
-        <a href="HTML/ejercicio08.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver ejercicio</a>
+      <!-- EJERCICIO #08 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #08</div>
+        <div class="collapse-content">
+          <p>
+            Crear una función findIndex que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • devuelva el índice del elemento pasado como argumento del primer
+            callback que devuelva true <br />
+            • sí ningún callback devuelve true, devuelva undefined
+          </p>
+          <a
+            href="HTML/ejercicio08.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #09 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #09</div>
-      <div class="collapse-content">
-        <p>
-          Crear una función dropWhile que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • devuelva un array con los elementos a partir del primer callback
-          que devolvió false <br />
-          • (Es decir, crea un nuevo array y va recorriendo elemento por
-          elemento, mientras el callback de true, no los agrega, cuando el
-          callback da false por primera vez agrega todos los elementos
-          restantes a partir de dicho elemento inclusive)
-        </p>
-        <a href="HTML/ejercicio09.html" class="btn btn-disabled bg-white text-black mt-5 hover:bg-white">Ver
-          ejercicio</a>
+      <!-- EJERCICIO #09 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #09</div>
+        <div class="collapse-content">
+          <p>
+            Crear una función dropWhile que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • devuelva un array con los elementos a partir del primer callback
+            que devolvió false <br />
+            • (Es decir, crea un nuevo array y va recorriendo elemento por
+            elemento, mientras el callback de true, no los agrega, cuando el
+            callback da false por primera vez agrega todos los elementos
+            restantes a partir de dicho elemento inclusive)
+          </p>
+          <a
+            href="HTML/ejercicio09.html"
+            class="btn btn-disabled bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #10 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #10</div>
-      <div class="collapse-content">
-        <p>
-          Crear una función takeWhile que acepte un array y un callback y que:
-          <br />
-          • por cada elemento del array ejecute el callback pasándole dicho
-          elemento como argumento <br />
-          • devuelva un array con los elementos hasta el primer callback que
-          devolvió false <br />
-          • (Inverso del dropWhile)
-        </p>
-        <a href="HTML/ejercicio10.html" class="btn btn-disabled bg-white text-black mt-5 hover:bg-white">Ver
-          ejercicio</a>
+      <!-- EJERCICIO #10 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #10</div>
+        <div class="collapse-content">
+          <p>
+            Crear una función takeWhile que acepte un array y un callback y que:
+            <br />
+            • por cada elemento del array ejecute el callback pasándole dicho
+            elemento como argumento <br />
+            • devuelva un array con los elementos hasta el primer callback que
+            devolvió false <br />
+            • (Inverso del dropWhile)
+          </p>
+          <a
+            href="HTML/ejercicio10.html"
+            class="btn btn-disabled bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #11 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #11</div>
-      <div class="collapse-content">
-        <p>
-          11. ¿Cuál es el resultado del código a continuación?
-        </p>
-        <img src="Images/1.png" alt="">
-        <a href="HTML/ejercicio11.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver
-          ejercicio</a>
+      <!-- EJERCICIO #11 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #11</div>
+        <div class="collapse-content">
+          <p>11. ¿Cuál es el resultado del código a continuación?</p>
+          <img src="Images/1.png" alt="" />
+          <a
+            href="HTML/ejercicio11.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
 
-    <!-- EJERCICIO #12 -->
-    <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
-      <input type="radio" name="my-accordion-2" />
-      <div class="collapse-title text-xl font-medium">Ejercicio #12</div>
-      <div class="collapse-content">
-        <p>
-          12. La función incorporada setTimeout utiliza callbacks. Crea una alternativa basada en
-          promesas. <br>
-          La función delay(ms) debería devolver una promesa. Esa promesa debería resolverse <br>
-          después de ms milisegundos, para que podamos agregarle. then, así:
-        </p>
-        <img src="Images/2.png" alt="">
-        <a href="HTML/ejercicio12.html" class="btn bg-white text-black mt-5 hover:bg-white">Ver
-          ejercicio</a>
+      <!-- EJERCICIO #12 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #12</div>
+        <div class="collapse-content">
+          <p>
+            12. La función incorporada setTimeout utiliza callbacks. Crea una
+            alternativa basada en promesas. <br />
+            La función delay(ms) debería devolver una promesa. Esa promesa
+            debería resolverse <br />
+            después de ms milisegundos, para que podamos agregarle. then, así:
+          </p>
+          <img src="Images/2.png" alt="" />
+          <a
+            href="HTML/ejercicio12.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
       </div>
-    </div>
-  </section>
-</body>
 
+      <!-- EJERCICIO #13 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #13</div>
+        <div class="collapse-content">
+          <p>
+            13. Crea una Promise que se resuelva después de 3 segundos y luego
+            imprima "Promise resuelta" cuando se cumpla
+          </p>
+          <a
+            href="HTML/ejercicio13.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #14 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #14</div>
+        <div class="collapse-content">
+          <p>
+            14. Define una función asincrónica que espere 1 segundo y luego
+            devuelva una cadena que diga "Operación completada". Utiliza
+            async/await.
+          </p>
+          <a
+            href="HTML/ejercicio14.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #15 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #15</div>
+        <div class="collapse-content">
+          <p>
+            15. Crea una Promise que se rechace después de 2 segundos y captura
+            el error para imprimir "Error: Promise rechazada".
+          </p>
+          <a
+            href="HTML/ejercicio15.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #16 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #16</div>
+        <div class="collapse-content">
+          <p>
+            16. Crea tres Promises consecutivas, donde cada una se resuelva
+            después de 1 segundo y devuelva un número diferente. Luego, encadena
+            las tres Promises para sumar los resultados y mostrar el resultado
+            final.
+          </p>
+          <a
+            href="HTML/ejercicio16.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #17 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #17</div>
+        <div class="collapse-content">
+          <p>
+            17. Realiza una llamada a un archivo local Muestra en formato json,
+            luego muestre los datos obtenidos en la consola.
+          </p>
+          <a
+            href="HTML/ejercicio17.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #18 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #18</div>
+        <div class="collapse-content">
+          <p>
+            18. Después de realizar una llamada a un archivo local en formato
+            json, utiliza el método then() para filtrar los datos y mostrar solo
+            los elementos que cumplan ciertos criterios (por ejemplo, mostrar
+            solo los nombres que comiencen con "A").
+          </p>
+          <a
+            href="HTML/ejercicio18.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #19 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #19</div>
+        <div class="collapse-content">
+          <p>
+            19. Crea una función asincrónica que realice una llamada a un
+            archivo local en formato json y luego manipule los datos recibidos
+            para mostrar información específica.
+          </p>
+          <a
+            href="HTML/ejercicio19.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #20 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #20</div>
+        <div class="collapse-content">
+          <p>
+            20. Crea tres Promises que se resuelvan después de diferentes
+            intervalos de tiempo y luego utilice Promise.all() para mostrar un
+            mensaje cuando todas se hayan resuelto.
+          </p>
+          <a
+            href="HTML/ejercicio20.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #21 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #21</div>
+        <div class="collapse-content">
+          <p>
+            21. Realiza tres Promises, algunas de las cuales se resuelvan y
+            otras se rechacen. Utiliza Promise.allSettled() para obtener
+            información sobre el estado de todas las Promises.
+          </p>
+          <a
+            href="HTML/ejercicio21.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #22 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #22</div>
+        <div class="collapse-content">
+          <p>
+            22. Crea un bucle que realice llamadas asincrónicas utilizando
+            async/await para procesar una lista de elementos uno por uno.
+          </p>
+          <a
+            href="HTML/ejercicio22.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #23 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #23</div>
+        <div class="collapse-content">
+          <p>
+            23. Realiza una llamada a un archivo local en formato json y maneja
+            posibles errores utilizando try/catch para mostrar un mensaje de
+            error en caso de fallo.
+          </p>
+          <a
+            href="HTML/ejercicio23.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #24 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #24</div>
+        <div class="collapse-content">
+          <p>
+            23. Realiza una llamada a un archivo local en formato json y maneja
+            posibles errores utilizando try/catch para mostrar un mensaje de
+            error en caso de fallo.
+          </p>
+          <a
+            href="HTML/ejercicio24.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+
+      <!-- EJERCICIO #25 -->
+      <div class="collapse collapse-arrow bg-base-200 w-full max-w-2xl">
+        <input type="radio" name="my-accordion-2" />
+        <div class="collapse-title text-xl font-medium">Ejercicio #25</div>
+        <div class="collapse-content">
+          <p>
+            25. Usar un proxy para la validación de los valores de propiedades
+            <br />
+            • Cuando declaremos que el atributo es numérico solo perimimos que
+            ingresen números <br />
+            • Cuando declaremos que el atributo es alfanumérico solo permitimos
+            que ingresen letras <br />
+            • Cuando declaremos que el atributo es un email, solo permitimos que
+            ingresen correos <br />
+            • Cuando declaremos que el atributo es de tipo date, solo permitimos
+            que ingresen fechas <br />
+            • Para todos los atributos no se puede ingresar espacios en blanco
+            tanto al inicio como al final de estos y se debe mostrar el error
+            personalizado por consola
+          </p>
+          <a
+            href="HTML/ejercicio25.html"
+            class="btn bg-white text-black mt-5 hover:bg-white"
+            >Ver ejercicio</a
+          >
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

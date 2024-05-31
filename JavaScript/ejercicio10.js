@@ -9,14 +9,15 @@ Crear una función takeWhile que acepte un array y un callback y que:
 • (Inverso del dropWhile)
 */
 
-// Requiring the lodash library 
+// Requerir la biblioteca lodash
 const _ = require("lodash");
-// Array 
+// Declarar un array
 let array = [-1, -21, -43, 34, 12, -1];
-// Function
+// Declarar una función que verifica si un número es menor que cero
 const menorQue = (num) => num < 0;
-// Getting dropped array using takeWhile() method
+// Obtener un nuevo array utilizando el método takeWhile() de lodash
+// Este método devuelve elementos del array original hasta que la función de prueba devuelva falso
 let resultado = _.takeWhile(array, menorQue);
-// Printing the output 
+// Imprimir el array original y el array resultante después de aplicar takeWhile()
 console.log("Array: ", array);
 console.log("Array resultado: ", resultado);

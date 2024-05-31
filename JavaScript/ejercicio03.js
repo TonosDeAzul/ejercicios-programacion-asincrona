@@ -11,11 +11,14 @@ argumento
 • devuelva el array final con el resultado de cada una de las llamadas al callback.
 */
 
-// Se declara el Array
+// Se declara el array con nombres en minúscula
 const array = ["daniel", "fenando", "gómez", "zayas"];
-// Función expresada que convierte la primer letra de la palabra en mayúscula
+// Función flecha que convierte la primera letra de una palabra a mayúscula
 const capitalizarPalabra = (palabra) =>
+  // Toma el primer carácter de la palabra, lo convierte a mayúscula
+  // y lo concatena con el resto de la palabra
   palabra.charAt(0).toUpperCase() + palabra.slice(1);
-// Recorre elemento por elemento del array y le aplica la función
+// Usa el método map para recorrer cada elemento del array y aplicar la función capitalizarPalabra
 let resultado = array.map(capitalizarPalabra);
+// Imprime el array resultante con las palabras capitalizadas
 console.log(resultado);

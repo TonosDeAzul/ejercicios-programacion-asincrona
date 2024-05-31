@@ -10,21 +10,22 @@ argumento
 • sí ningún callback devuelve true, devuelva undefined
 */
 
-// Se declara el array
+// Se declara el array con una lista de números
 const array = [1, 2, 4, 7];
-// Función expresada que busca los números primos
+// Función expresada que verifica si un número es primo
 const numsPrimos = function (num) {
-  // Iteramos desde 2 hasta el número 
+  // Itera desde 2 hasta num - 1
   for (let i = 2; i < num; i++) {
-    // Verifica si el número es divisible
+    // Verifica si num es divisible por i
     if (num % i === 0) {
-        // Si es divisble retorna false
+      // Si es divisible, no es primo, retorna false
       return false;
     }
   }
-    // Si no es divisible y es mayor que 1, retorna el número
+  // Si no es divisible por ningún número y es mayor que 1, es primo, retorna true
   return num > 1;
 };
-// Devuelve el primer elemento que sea primo
+// Usa el método find para devolver el primer elemento del array que es primo
 let resultado = array.find(numsPrimos);
+// Imprime el primer número primo encontrado en el array
 console.log(resultado);

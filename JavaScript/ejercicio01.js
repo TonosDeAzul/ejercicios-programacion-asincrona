@@ -6,36 +6,36 @@ Haz dos variantes de la solución describiendo el paso a paso de cada una de ell
 • Usando setTimeout anidado.
 */
 
-// setInterval
+// Usando setInterval
 function imprimirNumeros(desde, hasta) {
-  // Verifica el tamaño de los números
+  // Verifica si el número inicial es mayor que el número final
   if (desde > hasta) {
     console.log("El número de inicio es mayor que el número final");
   } else {
-    // Se declara el intervalo en una varible para tener un idetificador
+    // Declara el intervalo para ejecutar la función repetidamente
     let interval = setInterval(() => {
-      // Se verifica si el número ya llego hasta el final
+      // Verifica si el número actual ha alcanzado el número final
       if (desde === hasta) {
         // Detiene la ejecución del intervalo
         clearInterval(interval);
       }
-      // Imprime los números
+      // Imprime el número actual
       console.log(desde++);
-    }, 1000);
+    }, 1000);  // La función se ejecuta cada 1000 milisegundos (1 segundo)
   }
 }
 // imprimirNumeros(1, 4);
 
-// setTimeout
+// Usando setTimeout anidado
 function imprimirNumeros(desde, hasta) {
-  // Verifica el tamaño de los números
+  // Verifica si el número inicial es mayor que el número final
   if (desde > hasta) {
     console.log("El número de inicio es mayor que el número final");
   } else {
     // Se declara el timeout en una varible para tener un idetificador
     let timeout = setTimeout(function cont() {
       // Planifica la siguiente llamada al final de la actual
-      // Actuliza el valor del timeout con una nueva llamada a setTimeout, así la función cont se sigue ejecutando
+      // Actualiza el valor del timeout con una nueva llamada a setTimeout, así la función cont se sigue ejecutando
       timeout = setTimeout(cont, 1000);
       // Se verifica si el número ya llego hasta el final
       if (desde === hasta) {

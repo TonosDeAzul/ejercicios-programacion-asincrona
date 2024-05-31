@@ -11,10 +11,13 @@ devuelva true
 • sí ningún callback devuelve true, devuelva undefined
 */
 
-// Se declara el array
+// Se declara el array con elementos de diferentes tipos de datos
 const array = [1, 2, 3, "4", 5, 6, "7"];
-// Verfica si el tipo de dato es string
-const typeNumber = (num) => typeof num === "string" ? num : null;
-// Devuelve el index del primer elemento que coincida con la condición
+// Función flecha que verifica si el tipo de dato es string
+const typeNumber = (num) => 
+  // Si el tipo de num es 'string', retorna num; de lo contrario, retorna null
+    typeof num === "string" ? num : null;
+// Usa el método findIndex para devolver el índice del primer elemento del array que sea string
 let resultado = array.findIndex(typeNumber);
+// Imprime el índice del primer elemento string encontrado en el array
 console.log(resultado);

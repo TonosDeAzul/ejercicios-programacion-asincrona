@@ -14,13 +14,15 @@ callback de true, no los agrega, cuando el callback da false por primera vez agr
 todos los elementos restantes a partir de dicho elemento inclusive)
 */
 
-// Defining underscore contrib variable
+// Importando la biblioteca Underscore Contrib
 const _ = require('underscore-contrib');
-// Array
+// Declarando un array
 let array = [-1, -21, -43, 34, 12, -1];
-// Function
+// Declarando una función que verifica si un número es menor que cero
 const menorQue = (num) => num < 0;
-// Getting dropped array using dropWhile() method
+// Utilizando el método dropWhile() de Underscore Contrib para obtener un nuevo array
+// Este método elimina elementos del array original hasta que la función de prueba devuelva falso
 let resultado = _.dropWhile(array, menorQue);
+// Imprimiendo el array original y el array resultante después de aplicar dropWhile()
 console.log("Array: ", array);
 console.log("Array resultado: ", resultado);
